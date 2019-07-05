@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mono-clone/static/css/main.1779617f.chunk.css",
+    "main.js": "/mono-clone/static/js/main.3cfe56fe.chunk.js",
+    "main.js.map": "/mono-clone/static/js/main.3cfe56fe.chunk.js.map",
+    "runtime~main.js": "/mono-clone/static/js/runtime~main.d0bbf927.js",
+    "runtime~main.js.map": "/mono-clone/static/js/runtime~main.d0bbf927.js.map",
+    "static/js/2.f7844318.chunk.js": "/mono-clone/static/js/2.f7844318.chunk.js",
+    "static/js/2.f7844318.chunk.js.map": "/mono-clone/static/js/2.f7844318.chunk.js.map",
+    "index.html": "/mono-clone/index.html",
+    "precache-manifest.3100b18cff18a72943fa4773a4c98115.js": "/mono-clone/precache-manifest.3100b18cff18a72943fa4773a4c98115.js",
+    "service-worker.js": "/mono-clone/service-worker.js",
+    "static/css/main.1779617f.chunk.css.map": "/mono-clone/static/css/main.1779617f.chunk.css.map"
+  }
+}
