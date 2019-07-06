@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from '../images/mono-logo-horizontal.png';
 
 const menu = [
@@ -11,20 +11,24 @@ const menu = [
   'BLOG'
 ];
 
-const Header = () => (
-  <div className="header">
-    <div className="logo">
-      <a href="#none">
-        <img src={logo} alt="mono-logo" />
-      </a>
-    </div>
-    <ul className="nav">
-      {menu.map((item, index) => (
-        <Menu item={item} key={index} />
-      ))}
-    </ul>
-  </div>
-);
+class StickyHeader extends Component {
+  render() {
+    return (
+      <div className="header">
+        <div className="logo">
+          <a href="#none">
+            <img src={logo} alt="mono-logo" />
+          </a>
+        </div>
+        <ul className="nav">
+          {menu.map((item, index) => (
+            <Menu item={item} key={index} />
+          ))}
+        </ul>
+      </div>
+    );
+  }
+}
 
 const Menu = ({ item }) => (
   <li>
@@ -34,4 +38,4 @@ const Menu = ({ item }) => (
   </li>
 );
 
-export default Header;
+export default StickyHeader;
