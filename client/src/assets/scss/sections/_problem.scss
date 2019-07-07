@@ -1,0 +1,51 @@
+.problem {
+  .card-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .card {
+      width: 100%;
+      max-width: 445px;
+      margin: 60px auto 0;
+      padding: 10px 20px;
+      border-radius: 3px;
+      background-color: #0090b2;
+      p {
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff;
+      }
+      &:nth-child(2n-1).fadeIn {
+        animation-name: fadeInLeft;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+      }
+      &:nth-child(2n).fadeIn {
+        animation-name: fadeInRight;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+      }
+    }
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-2000px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
