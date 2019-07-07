@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 
-class Home extends Component {
+class SlideText extends Component {
   render() {
     return (
       <div className="section home-content">
@@ -39,4 +39,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default SlideText;
