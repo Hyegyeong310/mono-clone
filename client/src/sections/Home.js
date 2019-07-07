@@ -28,16 +28,18 @@ class Home extends Component {
     };
 
     return (
-      <div className="video-background" id="section0">
+      <div>
         <SlideText />
-        <div className="video-foreground">
-          <YouTube
-            videoId="P-fFQeadRNg"
-            opts={videoOptions}
-            className="video-iframe"
-            onReady={this._onReady}
-            onEnd={this._onEnd}
-          />
+        <div className="video-background" id="section0">
+          <div className="video-foreground">
+            <YouTube
+              videoId="P-fFQeadRNg"
+              opts={videoOptions}
+              className="video-iframe"
+              onReady={this._onReady}
+              onEnd={this._onEnd}
+            />
+          </div>
         </div>
       </div>
     );

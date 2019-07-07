@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import { Link } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
 
 class SlideText extends Component {
   render() {
     return (
-      <div className="section home-content">
+      <div className=" home-content">
         <Fade top>
           <h1>
             귀사의 <em>데이터</em>는 <em>안녕</em>하십니까?
@@ -33,7 +34,16 @@ class SlideText extends Component {
           <span>•</span>
           크립토 코드 정품 라벨
         </p>
-        <a href="#none">OUR MISSION</a>
+        <Link
+          activeClass="active"
+          to="section1"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={1000}
+        >
+          OUR MISSION
+        </Link>
       </div>
     );
   }
