@@ -1,0 +1,54 @@
+.solution {
+  .technology {
+    display: flex;
+    justify-content: space-evenly;
+    .card {
+      max-width: 185px;
+      position: relative;
+      flex-basis: 0;
+      flex: 1 1 0;
+      margin: 10px;
+      padding: 30px 10px;
+      overflow: hidden;
+      transition: all 0.3s ease 0s;
+
+      i {
+        font-size: 35px;
+        color: #0090b2;
+      }
+      h5 {
+        font-size: 14px;
+        color: #222;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 10px auto;
+      }
+      p {
+        font-size: 13px;
+        line-height: 20px;
+      }
+      &:hover {
+        background-color: #0090b2;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          border-width: 0 25px 25px 0;
+          border-style: solid;
+          display: block;
+          width: 0;
+          border-color: #f5f5f5 #f5f5f5 #1ba3c3 #1ba3c3;
+        }
+        i,
+        h5 {
+          color: #fff;
+        }
+        p {
+          color: #fff;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
