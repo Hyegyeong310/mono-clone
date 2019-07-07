@@ -13,6 +13,7 @@
   flex-direction: column;
   h1 {
     max-width: 1152px;
+    word-break: keep-all;
     overflow: hidden;
     font-size: 70px;
     font-weight: 500;

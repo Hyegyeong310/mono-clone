@@ -9,6 +9,7 @@ class MapContainer extends Component {
     };
     return (
       <Map
+        className="map"
         google={this.props.google}
         zoom={15}
         style={mapStyles}

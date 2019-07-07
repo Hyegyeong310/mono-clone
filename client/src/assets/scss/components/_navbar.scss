@@ -25,13 +25,16 @@
     height: 100%;
     .nav-item {
       display: inline;
-      font-weight: 400;
+      font-weight: 500;
       font-size: 12px;
       margin-left: 2rem;
       color: #999;
       text-transform: uppercase;
-      transition: all 0.3s ease-out 0s;
-      &:hover {
+      a {
+        color: #999;
+        transition: all 0.3s ease-out 0s;
+      }
+      &:hover a {
         color: #222;
         cursor: pointer;
       }

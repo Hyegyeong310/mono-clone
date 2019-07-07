@@ -18,10 +18,17 @@
           justify-content: center;
           min-width: 150px;
           border: 2px solid #fff;
+          border-radius: 3px;
           padding: 7px 10px;
           color: #fff;
           font-weight: 500;
           font-size: 0.8em;
+          transition: background-color 0.3s ease, border 0.3s ease,
+            color 0.3s ease, opacity 0.3s ease-in-out, outline 0.3s ease;
+          &:hover {
+            background-color: #fff;
+            color: #0090b2;
+          }
         }
       }
     }

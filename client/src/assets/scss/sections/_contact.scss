@@ -18,8 +18,9 @@
     height: 400px;
     margin-top: 50px;
     overflow: hidden;
-    div {
+    .map {
       left: 0;
+      height: 500px !important;
     }
   }
 }

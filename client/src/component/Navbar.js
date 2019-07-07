@@ -21,16 +21,26 @@ function Navbar({ DummyText }) {
 
 const Menu = ({ title, index }) => (
   <li className="nav-item">
-    <Link
-      activeClass="active"
-      to={`section${index}`}
-      spy={true}
-      smooth={true}
-      offset={-70}
-      duration={1000}
-    >
-      {title}
-    </Link>
+    {title === 'blog' ? (
+      <a
+        href="http://monolabs.io/blog"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {title}
+      </a>
+    ) : (
+      <Link
+        activeClass="active"
+        to={`section${index}`}
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={1000}
+      >
+        {title}
+      </Link>
+    )}
   </li>
 );
 
