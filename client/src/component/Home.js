@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 
-class Main extends Component {
+class Home extends Component {
   render() {
     return (
-      <div className="home-center">
+      <div className="section home-content">
         <Fade top>
           <h1>
             귀사의 <em>데이터</em>는 <em>안녕</em>하십니까?
@@ -39,4 +39,4 @@ class Main extends Component {
   }
 }
 
-export default Main;
+export default Home;

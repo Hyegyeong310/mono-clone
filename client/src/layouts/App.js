@@ -1,32 +1,21 @@
 import React, { Component } from 'react';
 import '../assets/scss/main.scss';
+import '../App.css';
 import Helmet from 'react-helmet';
 import YouTube from 'react-youtube';
 import PropTypes from 'prop-types';
 
-import Main from '../component/Main';
-import StickyHeader from '../component/Header';
-import Content from '../component/Content';
+import Navbar from '../component/Navbar';
 import Footer from '../component/Footer';
+import Home from '../component/Home';
+import Section from '../component/Section';
+
+import { menu } from '../DummyText';
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      loading: 'is-loading'
-    };
-  }
-
-  componentDidMount() {
-    this.timeoutId = setTimeout(() => {
-      this.setState({ loading: '' });
-    }, 100);
-  }
-
-  componentWillUnmount() {
-    if (this.timeoutId) {
-      clearTimeout(this.timeoutId);
-    }
+    this.state = {};
   }
 
   _onReady(event) {
@@ -47,14 +36,14 @@ class App extends Component {
       }
     };
     return (
-      <div className={`body ${this.state.loading}`}>
+      <div className={`body`}>
         <Helmet>
           <title>Monolabs</title>
           <meta name="description" content="" />
         </Helmet>
 
-        <div className="video-background">
-          <Main />
+        <div className="video-background" id="section0">
+          <Home />
           <div className="video-foreground">
             <YouTube
               videoId="P-fFQeadRNg"
@@ -67,8 +56,16 @@ class App extends Component {
         </div>
 
         <div id="wrapper">
-          <StickyHeader />
-          <Content />
+          <Navbar />
+          {menu.map((item, index) => {
+            if (index === 0) {
+              return '';
+            } else {
+              return (
+                <Section key={index} title={item} id={`section${index}`} />
+              );
+            }
+          })}
           <Footer />
         </div>
       </div>
