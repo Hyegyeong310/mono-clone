@@ -1,11 +1,9 @@
 const API = '/api';
-const PROBLEMS = '/problems';
-const SOLUTIONS = '/solutions';
+const DATA = '/data';
 
 const routes = {
   api: API,
-  problems: PROBLEMS,
-  solutions: SOLUTIONS
+  data: DATA
 };
 
 export default routes;

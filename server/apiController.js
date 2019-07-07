@@ -1,9 +1,5 @@
-import { problems, solutions } from './db';
+import data from './db';
 
-export const getProblem = (req, res) => {
-  res.send(problems);
-};
-
-export const getSolutions = (req, res) => {
-  res.send(solutions);
+export const getData = (req, res) => {
+  res.send(data);
 };
