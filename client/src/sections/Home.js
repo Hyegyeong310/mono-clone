@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import YouTube from 'react-youtube';
 
 import SlideText from '../component/SlideText';
 
@@ -18,26 +17,18 @@ class Home extends Component {
   }
 
   render() {
-    const videoOptions = {
-      playerVars: {
-        autoplay: 1,
-        controls: 0,
-        rel: 0,
-        showinfo: 0
-      }
-    };
-
     return (
       <div>
         <SlideText />
         <div className="video-background" id="section0">
           <div className="video-foreground">
-            <YouTube
-              videoId="P-fFQeadRNg"
-              opts={videoOptions}
-              className="video-iframe"
-              onReady={this._onReady}
-              onEnd={this._onEnd}
+            <iframe
+              title="background-video"
+              width="600"
+              heigh="360"
+              src="https://www.youtube.com/embed/P-fFQeadRNg?autoplay=1&amp;loop=1;playlist=P-fFQeadRNg&mute=1"
+              frameBorder="0"
+              allow="autoplay;"
             />
           </div>
         </div>

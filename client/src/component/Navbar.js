@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import logo from '../images/mono-logo-horizontal.png';
 
-function Navbar({ DummyText }) {
+function Navbar({ data }) {
   return (
     <div className="nav" id="navbar">
       <div className="nav-content">
@@ -10,7 +10,7 @@ function Navbar({ DummyText }) {
           <img src={logo} className="nav-logo" alt="logo" />
         </a>
         <ul className="nav-items">
-          {DummyText.map(({ title }, index) => (
+          {data.map(({ title }, index) => (
             <Menu key={index} title={title} index={index} />
           ))}
         </ul>

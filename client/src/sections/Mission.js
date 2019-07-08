@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import YouTube from 'react-youtube';
 
 import SectionTitle from '../component/SectionTitle';
 
@@ -30,19 +29,19 @@ class Mission extends Component {
       item: { id, title, subtitle }
     } = this.props;
     const { active } = this.state;
-    const videoOptions = {
-      height: '360',
-      width: '600'
-    };
+
     return (
       <div className="section mission">
         <div className="section-content" id={`section${id}`}>
           <SectionTitle title={title} subtitle={subtitle} />
           <div className={`video-container ${active ? 'fadeIn' : ''}`}>
-            <YouTube
-              videoId="1cBzTjuRfW4"
-              opts={videoOptions}
-              onReady={this._onReady}
+            <iframe
+              title="background-video"
+              width="600"
+              heigh="360"
+              src="https://www.youtube.com/embed/1cBzTjuRfW4"
+              frameBorder="0"
+              allow="autoplay;"
             />
           </div>
         </div>

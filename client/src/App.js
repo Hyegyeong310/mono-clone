@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './assets/scss/main.scss';
 import './App.css';
+
+import axios from 'axios';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 
@@ -14,32 +16,53 @@ import Solution from './sections/Solution';
 import Partner from './sections/Partner';
 import Contact from './sections/Contact';
 
-import DummyText from './DummyText';
-
 class App extends Component {
+  state = { data: [] };
+
+  componentDidMount() {
+    const config = {
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json'
+      }
+    };
+
+    axios
+      .get(`${process.env.REACT_APP_BACKEND_HOST}/api/data`, config)
+      .then(response => {
+        this.setState(() => ({ data: response.data }));
+      })
+      .catch(err => console.log(err));
+  }
+
   render() {
-    return (
-      <div className={`body`}>
-        <Helmet>
-          <title>Monolabs</title>
-          <meta name="description" content="" />
-        </Helmet>
+    const { data } = this.state;
+    if (data.length > 0) {
+      return (
+        <div className={`body`}>
+          <Helmet>
+            <title>Monolabs</title>
+            <meta name="description" content="" />
+          </Helmet>
 
-        <Home />
+          <Home />
 
-        <div id="wrapper">
-          <Navbar DummyText={DummyText} />
-          <main>
-            <Mission item={DummyText[1]} />
-            <Problem item={DummyText[2]} />
-            <Solution item={DummyText[3]} />
-            <Partner item={DummyText[4]} />
-            <Contact item={DummyText[5]} />
-          </main>
-          <Footer />
+          <div id="wrapper">
+            <Navbar data={data} />
+            <main>
+              <Mission item={data[1]} />
+              <Problem item={data[2]} />
+              <Solution item={data[3]} />
+              <Partner item={data[4]} />
+              <Contact item={data[5]} />
+            </main>
+            <Footer />
+          </div>
         </div>
-      </div>
-    );
+      );
+    } else {
+      return <h3>Loading...</h3>;
+    }
   }
 }
 
