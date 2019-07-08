@@ -6,6 +6,7 @@ import axios from 'axios';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 
+import Spinner from './component/Spinner';
 import Navbar from './component/Navbar';
 import Footer from './component/Footer';
 
@@ -17,7 +18,7 @@ import Partner from './sections/Partner';
 import Contact from './sections/Contact';
 
 class App extends Component {
-  state = { data: [] };
+  state = { data: [], loading: true };
 
   componentDidMount() {
     const config = {
@@ -30,14 +31,16 @@ class App extends Component {
     axios
       .get(`${process.env.REACT_APP_BACKEND_HOST}/api/data`, config)
       .then(response => {
-        this.setState(() => ({ data: response.data }));
+        this.setState(() => ({ data: response.data, loading: false }));
       })
       .catch(err => console.log(err));
   }
 
   render() {
-    const { data } = this.state;
-    if (data.length > 0) {
+    const { data, loading } = this.state;
+    if (loading) {
+      return <Spinner loading={loading} />;
+    } else {
       return (
         <div className={`body`}>
           <Helmet>
@@ -60,8 +63,6 @@ class App extends Component {
           </div>
         </div>
       );
-    } else {
-      return <h3>Loading...</h3>;
     }
   }
 }
