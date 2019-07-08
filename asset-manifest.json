@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mono-clone/static/css/main.e699560b.chunk.css",
-    "main.js": "/mono-clone/static/js/main.ef6aa1d3.chunk.js",
-    "main.js.map": "/mono-clone/static/js/main.ef6aa1d3.chunk.js.map",
+    "main.css": "/mono-clone/static/css/main.57c029e0.chunk.css",
+    "main.js": "/mono-clone/static/js/main.9abb0ba1.chunk.js",
+    "main.js.map": "/mono-clone/static/js/main.9abb0ba1.chunk.js.map",
     "runtime~main.js": "/mono-clone/static/js/runtime~main.d0bbf927.js",
     "runtime~main.js.map": "/mono-clone/static/js/runtime~main.d0bbf927.js.map",
     "static/js/2.ea2839b1.chunk.js": "/mono-clone/static/js/2.ea2839b1.chunk.js",
     "static/js/2.ea2839b1.chunk.js.map": "/mono-clone/static/js/2.ea2839b1.chunk.js.map",
     "index.html": "/mono-clone/index.html",
-    "precache-manifest.fa9e2b022bd2bb26df7c6c98edd9def6.js": "/mono-clone/precache-manifest.fa9e2b022bd2bb26df7c6c98edd9def6.js",
+    "precache-manifest.d775ad18b70502f90fbce44d18e15bac.js": "/mono-clone/precache-manifest.d775ad18b70502f90fbce44d18e15bac.js",
     "service-worker.js": "/mono-clone/service-worker.js",
-    "static/css/main.e699560b.chunk.css.map": "/mono-clone/static/css/main.e699560b.chunk.css.map"
+    "static/css/main.57c029e0.chunk.css.map": "/mono-clone/static/css/main.57c029e0.chunk.css.map"
   }
 }
