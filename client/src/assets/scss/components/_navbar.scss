@@ -3,12 +3,12 @@
   position: sticky;
   top: 0;
   width: 100%;
-  height: 65px;
+  height: 6.5rem;
   z-index: 1000;
-  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(0, 0, 0, 0.15);
 
   .nav-logo {
-    height: 50px;
+    height: 5rem;
     width: auto;
     &:hover {
       cursor: pointer;
@@ -26,7 +26,7 @@
     .nav-item {
       display: inline;
       font-weight: 500;
-      font-size: 12px;
+      font-size: 1.2rem;
       margin-left: 2rem;
       color: #999;
       text-transform: uppercase;

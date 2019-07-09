@@ -4,13 +4,13 @@
     grid-template-columns: repeat(2, 1fr);
     .card {
       width: 100%;
-      max-width: 445px;
-      margin: 60px auto 0;
-      padding: 10px 20px;
-      border-radius: 3px;
+      max-width: 44.5rem;
+      margin: 6rem auto 0;
+      padding: 1rem 2rem;
+      border-radius: 0.3rem;
       background-color: #0090b2;
       p {
-        font-size: 14px;
+        font-size: 1.4rem;
         font-weight: 600;
         color: #fff;
       }
@@ -31,7 +31,7 @@
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
-    transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-200rem, 0, 0);
   }
   100% {
     opacity: 1;

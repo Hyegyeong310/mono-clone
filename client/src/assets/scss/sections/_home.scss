@@ -12,13 +12,13 @@
   background-color: transparent;
   flex-direction: column;
   h1 {
-    max-width: 1152px;
+    max-width: 115.2rem;
     word-break: keep-all;
     overflow: hidden;
-    font-size: 70px;
+    font-size: 7rem;
     font-weight: 500;
     display: none;
-    line-height: 80px;
+    line-height: 8rem;
     em {
       color: #0090b2;
       font-style: normal;
@@ -28,22 +28,22 @@
     }
   }
   p {
-    margin: 20px auto;
-    font-size: 14px;
+    margin: 2rem auto;
+    font-size: 1.4rem;
     font-weight: 700;
     span {
-      margin: 0 10px;
+      margin: 0 1rem;
       opacity: 0.9;
       color: #fff;
     }
   }
   .mission-btn {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    border: 2px solid #fff;
-    border-radius: 3px;
+    font-size: 1.5rem;
+    border: 0.2rem solid #fff;
+    border-radius: 0.3rem;
     font-weight: 700;
-    padding: 10px 15px;
+    padding: 1rem 1.5rem;
     cursor: pointer;
     transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease,
       opacity 0.3s ease-in-out, outline 0.3s ease;

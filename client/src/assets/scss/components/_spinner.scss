@@ -8,8 +8,8 @@
   .spinner {
     display: inline-block;
     position: absolute;
-    width: 64px;
-    height: 64px;
+    width: 6.4rem;
+    height: 6.4rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -17,10 +17,10 @@
       box-sizing: border-box;
       display: block;
       position: absolute;
-      width: 51px;
-      height: 51px;
-      margin: 6px;
-      border: 6px solid #fff;
+      width: 5.1rem;
+      height: 5.1rem;
+      margin: 0.6rem;
+      border: 0.6rem solid #fff;
       border-radius: 50%;
       animation: loading 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
       border-color: #fff transparent transparent transparent;
