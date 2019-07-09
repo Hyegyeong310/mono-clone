@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/mono-clone/static/css/main.a5acfa01.chunk.css",
-    "main.js": "/mono-clone/static/js/main.9a1c2917.chunk.js",
-    "main.js.map": "/mono-clone/static/js/main.9a1c2917.chunk.js.map",
+    "main.js": "/mono-clone/static/js/main.f0c55e27.chunk.js",
+    "main.js.map": "/mono-clone/static/js/main.f0c55e27.chunk.js.map",
     "runtime~main.js": "/mono-clone/static/js/runtime~main.d0bbf927.js",
     "runtime~main.js.map": "/mono-clone/static/js/runtime~main.d0bbf927.js.map",
     "static/js/2.3de0204b.chunk.js": "/mono-clone/static/js/2.3de0204b.chunk.js",
     "static/js/2.3de0204b.chunk.js.map": "/mono-clone/static/js/2.3de0204b.chunk.js.map",
     "index.html": "/mono-clone/index.html",
-    "precache-manifest.89a8dbc4a29453199f7a0d3128f7a63a.js": "/mono-clone/precache-manifest.89a8dbc4a29453199f7a0d3128f7a63a.js",
+    "precache-manifest.63ca8b19565204df3ddcbd211bcd01d4.js": "/mono-clone/precache-manifest.63ca8b19565204df3ddcbd211bcd01d4.js",
     "service-worker.js": "/mono-clone/service-worker.js",
     "static/css/main.a5acfa01.chunk.css.map": "/mono-clone/static/css/main.a5acfa01.chunk.css.map"
   }
