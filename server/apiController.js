@@ -1,5 +1,5 @@
 import data from './db';
 
 export const getData = (req, res) => {
-  res.send(data);
+  res.status(200).send(data);
 };

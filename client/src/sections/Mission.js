@@ -21,9 +21,10 @@ class Mission extends Component {
     });
   }
 
-  _onReady(event) {
-    event.target.pauseVideo();
-  }
+  _onReady = event => {
+    event.target.currentTime = 2;
+  };
+
   render() {
     const {
       item: { id, title, subtitle }
@@ -35,14 +36,21 @@ class Mission extends Component {
         <div className="section-content" id={`section${id}`}>
           <SectionTitle title={title} subtitle={subtitle} />
           <div className={`video-container ${active ? 'fadeIn' : ''}`}>
-            <iframe
+            <video
+              id="introVideo"
+              controls="controls"
+              preload="auto"
+              muted
               title="background-video"
-              width="600"
-              heigh="360"
-              src="https://www.youtube.com/embed/1cBzTjuRfW4"
-              frameBorder="0"
-              allow="autoplay;"
-            />
+              onLoadedMetadata={this._onReady}
+            >
+              <source
+                src={`${
+                  process.env.REACT_APP_AWS_S3
+                }videos/introduce_monolabs.mp4`}
+                type="video/mp4"
+              />
+            </video>
           </div>
         </div>
       </div>

@@ -1,13 +1,18 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import logo from '../images/mono-logo-horizontal.png';
 
 function Navbar({ data }) {
   return (
     <div className="nav" id="navbar">
       <div className="nav-content">
         <a href="/">
-          <img src={logo} className="nav-logo" alt="logo" />
+          <img
+            src={`${
+              process.env.REACT_APP_AWS_S3
+            }images/mono-logo-horizontal.png`}
+            className="nav-logo"
+            alt="logo"
+          />
         </a>
         <ul className="nav-items">
           {data.map(({ title }, index) => (

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import topBtnImage from '../images/menu_bottom_top_bg.png';
 
 class Footer extends Component {
   scrollToTop() {
@@ -12,7 +11,11 @@ class Footer extends Component {
         <div id="menu-top" onClick={this.scrollToTop}>
           <div
             id="menu-top_inside"
-            style={{ backgroundImage: `url(${topBtnImage})` }}
+            style={{
+              backgroundImage: `url(${
+                process.env.REACT_APP_AWS_S3
+              }images/menu_bottom_top_bg.png)`
+            }}
           />
         </div>
         <ul className="icons">
