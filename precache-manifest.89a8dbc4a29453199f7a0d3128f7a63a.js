@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3c1f07d85b19e3c6d548e8c23f57ab53",
+    "revision": "8f2c5c8c60eee4193abecaff32a5a1ff",
     "url": "/mono-clone/index.html"
   },
   {
-    "revision": "42729eb96d3081367c7f",
-    "url": "/mono-clone/static/css/main.96329990.chunk.css"
+    "revision": "335eb60c80d0c6ab112b",
+    "url": "/mono-clone/static/css/main.a5acfa01.chunk.css"
   },
   {
     "revision": "24ccc1d576f3d78fe36a",
     "url": "/mono-clone/static/js/2.3de0204b.chunk.js"
   },
   {
-    "revision": "42729eb96d3081367c7f",
-    "url": "/mono-clone/static/js/main.eb9190cf.chunk.js"
+    "revision": "335eb60c80d0c6ab112b",
+    "url": "/mono-clone/static/js/main.9a1c2917.chunk.js"
   },
   {
     "revision": "67689f70e33ca2fc7ed3",
