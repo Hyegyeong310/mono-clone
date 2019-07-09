@@ -22,7 +22,7 @@ class Navbar extends Component {
       <div className="nav" id="navbar">
         <div className="nav-content">
           <div className="logo">
-            <a href="/">
+            <a href="/mono-clone/">
               <img
                 src={`${
                   process.env.REACT_APP_AWS_S3
