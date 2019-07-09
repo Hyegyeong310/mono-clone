@@ -36,3 +36,38 @@
     }
   }
 }
+
+@include tab {
+  .section {
+    .section-content {
+      max-width: 60rem;
+    }
+  }
+}
+
+@include mob-large {
+  .section {
+    .section-content {
+      max-width: 40rem;
+      padding: 10rem 0;
+      .section-title {
+        p {
+          word-break: keep-all;
+        }
+      }
+    }
+  }
+}
+
+@include mob-mid {
+  .section {
+    .section-content {
+      max-width: 28rem;
+      .section-title {
+        p {
+          word-break: normal;
+        }
+      }
+    }
+  }
+}

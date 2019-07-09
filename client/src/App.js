@@ -18,7 +18,10 @@ import Partner from './sections/Partner';
 import Contact from './sections/Contact';
 
 class App extends Component {
-  state = { data: [], loading: true };
+  constructor(props) {
+    super(props);
+    this.state = { data: [], loading: true };
+  }
 
   componentDidMount() {
     const config = {

@@ -49,3 +49,38 @@
     transform: none;
   }
 }
+
+@include tab {
+  .problem {
+    .card-content {
+      .card {
+        max-width: 28.5rem;
+        column-gap: 2rem;
+      }
+    }
+  }
+}
+
+@include mob {
+  .problem {
+    .section-title {
+      margin-bottom: 0 !important;
+    }
+    .card-content {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 0 2rem;
+    }
+  }
+}
+
+@include mob-large {
+  .problem {
+    .card-content {
+      grid-template-columns: 1fr;
+      .card {
+        width: 100%;
+        max-width: none;
+      }
+    }
+  }
+}

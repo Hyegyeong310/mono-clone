@@ -24,3 +24,16 @@
     }
   }
 }
+
+@include mob-large {
+  .contact {
+    .section-content {
+      padding-bottom: 0;
+    }
+    .map-container {
+      .map {
+        height: 40rem !important;
+      }
+    }
+  }
+}

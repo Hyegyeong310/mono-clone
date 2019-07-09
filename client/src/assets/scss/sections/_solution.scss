@@ -53,3 +53,29 @@
     }
   }
 }
+
+@include tab {
+  .solution {
+    .technology {
+      margin: 0 auto;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .card {
+        max-width: 25.8rem;
+        flex: 1 0 24rem;
+      }
+    }
+  }
+}
+
+@include mob-large {
+  .solution {
+    .technology {
+      .card {
+        max-width: 100%;
+        padding: 3rem 2rem;
+        margin: 0;
+      }
+    }
+  }
+}

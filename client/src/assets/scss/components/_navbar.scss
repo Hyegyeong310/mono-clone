@@ -44,3 +44,13 @@
     }
   }
 }
+
+@include tab {
+  .nav {
+    .nav-items {
+      display: none;
+      .nav-item {
+      }
+    }
+  }
+}

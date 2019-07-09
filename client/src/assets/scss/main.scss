@@ -1,12 +1,16 @@
-@import 'sections/home';
-@import 'sections/mission';
-@import 'sections/problem';
-@import 'sections/solution';
-@import 'sections/partner';
-@import 'sections/contact';
+@import 'abstracts/mixins';
+
+@import 'base/reset';
 
 @import 'components/navbar';
 @import 'components/section';
 @import 'components/video';
 @import 'components/footer';
 @import 'components/spinner';
+
+@import 'sections/home';
+@import 'sections/mission';
+@import 'sections/problem';
+@import 'sections/solution';
+@import 'sections/partner';
+@import 'sections/contact';

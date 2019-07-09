@@ -11,6 +11,7 @@
   z-index: 999;
   background-color: transparent;
   flex-direction: column;
+
   h1 {
     max-width: 115.2rem;
     word-break: keep-all;
@@ -19,6 +20,7 @@
     font-weight: 500;
     display: none;
     line-height: 8rem;
+
     em {
       color: #0090b2;
       font-style: normal;
@@ -50,6 +52,47 @@
     &:hover {
       background-color: #fff;
       color: #222;
+    }
+  }
+}
+
+@include tab {
+  .home-content {
+    h1 {
+      max-width: 92.1rem;
+      font-size: 6rem;
+    }
+  }
+}
+
+@include mob-large {
+  .home-content {
+    margin: 0 auto;
+    h1 {
+      font-size: 3rem;
+      max-width: 57.6rem;
+      line-height: 4rem;
+    }
+  }
+}
+
+@include mob-mid {
+  .home-content {
+    h1,
+    p {
+      max-width: 38.2rem;
+    }
+    p {
+      line-height: 2rem;
+    }
+  }
+}
+
+@include mob-small {
+  .home-content {
+    h1,
+    p {
+      max-width: 33.7rem;
     }
   }
 }
